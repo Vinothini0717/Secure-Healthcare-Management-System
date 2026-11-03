@@ -1,0 +1,32 @@
+
+services:
+  healthcare-app:
+    image: healthcare-system:latest
+    container_name: healthcare-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://host.docker.internal:5432/healthcare_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_DATA_REDIS_PORT: 6379
+      HEALTHCARE_ENCRYPTION_KEY: ${HEALTHCARE_ENCRYPTION_KEY}
+      HEALTHCARE_JWT_SECRET: ${HEALTHCARE_JWT_SECRET}
+      HEALTHCARE_ADMIN_USERNAME: ${HEALTHCARE_ADMIN_USERNAME}
+      HEALTHCARE_ADMIN_PASSWORD: ${HEALTHCARE_ADMIN_PASSWORD}
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: healthcare-redis-compose
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+volumes:
+  redis_data:
