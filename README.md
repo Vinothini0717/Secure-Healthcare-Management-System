@@ -745,7 +745,36 @@ http://localhost:8080/actuator/health
 
 ---
 
-## 19. Advantages of the System
+---
+
+## 19. Application Screenshots
+
+The following screenshots demonstrate the working application and its implemented features.
+
+### Application Screenshots
+
+![Screenshot 1](screenshots/1.png)
+![Screenshot 2](screenshots/2.png)
+![Screenshot 3](screenshots/3.png)
+![Screenshot 4](screenshots/4.png)
+![Screenshot 5](screenshots/5.png)
+![Screenshot 6](screenshots/6.png)
+![Screenshot 7](screenshots/7.png)
+![Screenshot 8](screenshots/8.png)
+![Screenshot 9](screenshots/9.png)
+![Screenshot 10](screenshots/10.png)
+![Screenshot 11](screenshots/11.png)
+![Screenshot 12](screenshots/12.png)
+![Screenshot 13](screenshots/13.png)
+![Screenshot 14](screenshots/14.png)
+![Screenshot 15](screenshots/15.png)
+![Screenshot 16](screenshots/16.png)
+![Screenshot 17](screenshots/17.png)
+![Screenshot 18](screenshots/18.png)
+![Screenshot 19](screenshots/19.png)
+![Screenshot 20](screenshots/20.png)
+
+## 20. Advantages of the System
 
 - Centralized patient information management.
 - Secure authentication and authorization.
@@ -762,7 +791,7 @@ http://localhost:8080/actuator/health
 
 ---
 
-## 20. Limitations
+## 21. Limitations
 
 The current implementation is focused on backend healthcare information management.
 
@@ -774,7 +803,7 @@ It should be treated as an educational project and not used to process real pati
 
 ---
 
-## 21. Future Enhancements
+## 22. Future Enhancements
 
 The following features can be considered for future development:
 
@@ -795,7 +824,7 @@ The following features can be considered for future development:
 
 ---
 
-## 22. Conclusion
+## 23. Conclusion
 
 The Secure Healthcare Management System demonstrates how modern backend technologies can be used to develop a secure and maintainable application.
 
@@ -807,7 +836,7 @@ Through this implementation, the project demonstrates practical knowledge of Jav
 
 ---
 
-## 23. Project Information
+## 24. Project Information
 
 | Item | Details |
 |---|---|
